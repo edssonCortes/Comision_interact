@@ -1,0 +1,25 @@
+.o_contenedorTarjeta{
+    display: flex;
+    flex-direction: row;
+    width: 83%;
+    margin-left: 5.25%;
+
+}
+.o_infoImg{
+    width: 80%;
+    height: auto;
+}
+
+.o_div_izq{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.o_div_der{
+    display: flex;
+    width: 50%; 
+    justify-content: flex-end;
+}

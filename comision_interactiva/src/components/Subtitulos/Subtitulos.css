@@ -1,0 +1,43 @@
+.o_subContainer{
+    display: flex;
+    width: 83%;
+    flex-direction: row;
+    /*align-items: flex-start;*/
+    margin-left: 9%;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+.o_subtitulos{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #222831;
+    font-size: 150%;
+    margin-bottom: 1rem;
+    margin-top: 4px;
+}
+.o_descripcion{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #222831;
+    font-size: 100%;
+    text-align: justify;
+    margin-right: 2rem;
+    
+}
+.o_line{
+    width: 1%;
+    height: 10%;
+    border-left: 2px solid #F05454;
+    position: absolute;
+    
+}
+.sub{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 1%;
+}
+
+/*<img className="o_imgSubtitulo" src={twitter} alt="twitter" />
+import logo from "../../imgs/"*/

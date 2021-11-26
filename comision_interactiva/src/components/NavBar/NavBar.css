@@ -1,0 +1,104 @@
+/*Estilos de la barra de navegacion*/
+
+.o_navBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0px 4px 0px 0px rgba(155, 155, 155, 0.2);
+
+    background-color: #222831;
+    
+        
+    
+}
+.o_imgCont{
+    display: flex;
+    width: 20%;
+    justify-content: flex-end;
+
+}
+.o_nav_interno{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+}
+
+.o_nav_superior{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.o_nav_inferior{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+}
+
+.img{
+    margin: 0px 0px 0px 10px;
+    width: 2%;
+    height: auto;
+    cursor: pointer;
+
+}
+.img:hover{
+    margin: 0px 0px 0px 10px;
+    
+    height: auto;
+    opacity: 15%;
+    cursor: pointer;
+    
+}
+.img:active{
+    margin: 0px 0px 0px 10px;
+    
+    height: auto;
+    opacity: 50%;
+    cursor: pointer;
+}
+.imgNav{
+    width: 60%;
+    height: auto;
+}
+.o_title_nav{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+    margin: 0px 0rem 0px 15rem;
+    color: #DDDDDD;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.o_title_nav:hover{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px 0rem 0px 15rem;
+    color: #917D26;
+    cursor: pointer;
+ 
+}
+
+.o_title_nav:active{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px 0rem 0px 15rem;
+    color: #917D26;
+    cursor: pointer;
+    opacity: 30%;
+ 
+}
+.contact{
+    font-family: 'Roboto', sans-serif;
+    margin-right: 10px;
+    color: #DDDDDD ;
+    margin: 0;
+}
+
+/*
+*/
