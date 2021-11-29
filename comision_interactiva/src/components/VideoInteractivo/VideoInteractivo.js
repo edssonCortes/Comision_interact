@@ -1,49 +1,47 @@
 import React, { useState, useEffect } from "react";
 import "./VideoInteractivo.css";
-import video from "../../imgs/video.mp4";
-import video3 from "../../imgs/video3.mp4";
 
 function VideoInteractivo() {
-  const [src, setSrc] = useState(video); //URL DEL VIDEO
   const videoPlayer = document.getElementById("videoProject"); //OBTENER INFORMACIÓN DEL VIDEO ACTUAL
+  const [src, setSrc] = useState(
+    "http://media.w3.org/2010/05/sintel/trailer.mp4"
+  ); //URL DEL VIDEO
   const [videos, setVideos] = useState(1);
   const [currentTime, setCurrentTime] = useState(0);
-
   //ARREGLO DE BOTONES CON LOS VIDEOS
-
-  const video1 = [
+  const [videos1, setVideos1] = useState([
     {
       id: 1,
       styles: {
         transform: "translate(0px, 10px)",
         nameBtn: "Video1",
-        display: "none",
+        display: "block",
         background: "black",
         color: "white",
         width: "50px",
         height: "50px",
       },
-      src: video,
+      src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
     },
     {
       id: 2,
       styles: {
         transform: "translate(50px, 10px)",
         nameBtn: "Video2",
-        display: "none",
+        display: "block",
         background: "black",
         color: "white",
         width: "50px",
         height: "50px",
       },
-      src: video3,
+      src: "http://media.w3.org/2010/05/bunny/movie.mp4",
     },
-  ];
+  ]);
 
   //CAMBIAR DE VIDEO
   const action = (idBtn) => {
     if (videos === 1) {
-      video1.map((vd1) => {
+      videos1.map((vd1) => {
         if (vd1.id === idBtn) {
           setSrc(vd1.src);
         }
@@ -54,28 +52,34 @@ function VideoInteractivo() {
   };
 
   useEffect(() => {
-    //ACTUALIZAR EL TIEMPO TRANSCURRIDO DEL VIDEO
+    console.log(videoPlayer);
     if (videoPlayer) {
-      videoPlayer.ontimeupdate = function () {
+      videoPlayer.ontimeupdate = () => {
         setCurrentTime(videoPlayer.currentTime);
       };
     }
-  }, []);
+  }, [videoPlayer]);
 
-
+  //ARREGLAR
   useEffect(() => {
-    if (videos === 1) {
-      if (currentTime >= 10 &&  currentTime <= 15 ) {
-        return video1.map((vd1) => (vd1.styles.display = "block"));
+    //ACTUALIZAR ANIMACIÓN
+    videos1.map((vd) => {
+      if (currentTime >= 5 && currentTime <= 10) {
+        vd.styles.display = "block";
+      } else {
+        vd.styles.display = "none";
       }
-    }
-  }, [currentTime]);
+      return vd;
+    });
+  }, [currentTime, videos1]);
 
   return (
     <div>
       <div className="container">
-        <video className="" id="videoProject" controls autoPlay src={src} />{" "}
-        {video1.map((vd1) => (
+        <video id="videoProject" autoPlay controls>
+          <source src={src} type="video/mp4" />
+        </video>
+        {videos1.map((vd1) => (
           <button
             type="button"
             key={vd1.id}
