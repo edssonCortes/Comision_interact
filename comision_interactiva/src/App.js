@@ -15,6 +15,12 @@ import Informe from './components/Informe/Informe.js';
 
 
 function App() {
+
+
+function redirect (){
+  window.location.href = 'http://localhost:3001/';
+}
+
   return (
     <div className="App">
       <NavBar></NavBar>
@@ -35,6 +41,8 @@ function App() {
 
       <Subtitulos textSubtitle="Juega y aprende" descrip="Video juego interactivo desarrollado con base a la informacion recolactada por “La comision de la verdad”.
       Este juego evalua la capacidad de comprensión y evalua que tan preparado estas para transmitir tus conocimientos a otras personas."></Subtitulos>
+
+      <button onClick={()=>redirect()}>click para ir al juego</button>
       
    
 
