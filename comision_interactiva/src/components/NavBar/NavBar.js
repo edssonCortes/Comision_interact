@@ -21,7 +21,7 @@ function NavBar() {
                         <img className="img" src={youtube} alt="facebook" />
                     </div>
                     <div className="o_nav_inferior">
-                        <h3 className="o_title_nav">¿Quienes somos?</h3>
+                        <h3 className="o_title_nav" >¿Quienes somos?</h3>
                         <h3 className="o_title_nav">Video interactivo</h3>
                         <h3 className="o_title_nav">Juega y aprende</h3>
                         <h3 className="o_title_nav">Informe</h3>
