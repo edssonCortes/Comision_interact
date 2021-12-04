@@ -5,7 +5,7 @@ import imgIzq from "../../imgs/video.png";
 
 const Informe = () => {
   return (
-    <div className="o_contenedorTarjeta">
+    <div className="o_contenedorTarjeta" id='4'>
       <div className="o_div_izq">
       <Subtitulos
           textSubtitle="Informe final de la verdad"

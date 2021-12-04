@@ -4,9 +4,15 @@ import LogoNav from '../../imgs/descarga.png'
 import twitter from '../../imgs/twitter.png'
 import facebook from '../../imgs/facebook.png'
 import youtube from '../../imgs/youtube.png'
+import {Link} from 'react-scroll'
 
 function NavBar() {
+    
     return (
+
+        
+
+
         <div>
 
             <nav className="o_navBar">
@@ -21,10 +27,10 @@ function NavBar() {
                         <img className="img" src={youtube} alt="facebook" />
                     </div>
                     <div className="o_nav_inferior">
-                        <h3 className="o_title_nav" >¿Quienes somos?</h3>
-                        <h3 className="o_title_nav">Video interactivo</h3>
-                        <h3 className="o_title_nav">Juega y aprende</h3>
-                        <h3 className="o_title_nav">Informe</h3>
+                        <Link className="o_title_nav" to='1' smooth='true' duration='1000'>¿Quienes somos?</Link>
+                        <Link className="o_title_nav"to='2' smooth='true' duration='1000'>Video interactivo</Link>
+                        <Link className="o_title_nav" to='3' smooth='true' duration='1000'>Juega y aprende</Link>
+                        <Link className="o_title_nav" to='4' smooth='true' duration='1000'>Informe</Link>
                     </div>
                 </div>
             </nav>

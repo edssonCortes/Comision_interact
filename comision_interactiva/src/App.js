@@ -1,16 +1,15 @@
 import NavBar from "./components/NavBar/NavBar.js";
 import Footer from "./components/Footer/Footer.js";
-
 import Titulos from "./components/Titulos/Titulos.js";
 import Landing from "./imgs/Landing.jpg";
 import "./App.css";
 import Subtitulos from "./components/Subtitulos/Subtitulos.js";
 /*import video from "./imgs/video.mp4"*/
-import juego from "./imgs/juego.png";
-import VideoInteractivo from "./components/VideoInteractivo/VideoInteractivo.js";
-
+/*import juego from "./imgs/juego.png";
+import VideoInteractivo from "./components/VideoInteractivo/VideoInteractivo.js";*/
 import Informe from "./components/Informe/Informe.js";
 /*import video from "https://www.youtube.com/watch?v=ZQhYeztNMcg"*/
+
 
 function App() {
   function redirect() {
@@ -19,7 +18,7 @@ function App() {
 let VIDEO = 'http://127.0.0.1:5500/index.html'
   return (
     <div className="App">
-      <NavBar></NavBar>
+      <NavBar ></NavBar>
       <div className="o_container">
         <img className="o_imgLanding" src={Landing} alt="Landing" />
         <Titulos className="except" texto="¿Quienes somos?"></Titulos>
@@ -34,7 +33,7 @@ let VIDEO = 'http://127.0.0.1:5500/index.html'
         </p>
       </div>
       <Subtitulos
-        
+        id='2'
         textSubtitle="Video interactivo"
         descrip="Bienvenido al espacio del video interactivo, en el cual haras parte de un recorrido informativo sobre la Comision de la Verdad y las diferentes iniciativas que tiene. "
       ></Subtitulos>
@@ -53,7 +52,8 @@ let VIDEO = 'http://127.0.0.1:5500/index.html'
         src={VIDEO}
       ></iframe>
 </div>
-      <Subtitulos
+      <Subtitulos 
+        id='3'
         textSubtitle="Juega y aprende"
         descrip="Video juego interactivo desarrollado con base a la informacion recolactada por “La comision de la verdad”.
       Este juego evalua la capacidad de comprensión y evalua que tan preparado estas para transmitir tus conocimientos a otras personas."
