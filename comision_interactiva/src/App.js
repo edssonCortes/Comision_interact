@@ -4,28 +4,23 @@ import Titulos from "./components/Titulos/Titulos.js";
 import Landing from "./imgs/Landing.jpg";
 import "./App.css";
 import Subtitulos from "./components/Subtitulos/Subtitulos.js";
-import imgJuego from "./imgs/imagen_juego.png"
+import imgJuego from "./imgs/imagen_juego.png";
 import imgVideo from "./imgs/imagen_video.png";
 import { useState } from "react";
 
 import Informe from "./components/Informe/Informe.js";
 
-  function App() {
-
-
-
-    
-    let [mostrar, setMostrar] = useState(false);
-
-
+function App() {
+  let [mostrar, setMostrar] = useState(false);
+  let [mostrarVideo, setMostrarVideo] = useState(false);
 
   let VIDEO = "http://127.0.0.1:5500/index.html";
-  let JUEGO = "http://localhost:3001/";
+  let JUEGO = "https://videojuegocomiuao.web.app/";
   return (
     <div className="App">
       <NavBar></NavBar>
       <div id="1" className="o_container">
-        <img className="o_imgLanding" src={Landing} alt="Landing" />
+        <img className="o_imgLanding" src={Landing} alt="" />
         <Titulos className="except" texto="¿Quienes somos?"></Titulos>
         <p className="o_parrafo">
           Somos una Entidad de Estado que busca el esclarecimiento de los
@@ -44,7 +39,19 @@ import Informe from "./components/Informe/Informe.js";
       ></Subtitulos>
 
       <div className="containerIframe">
-        <iframe className="iframeVideo" scrolling="no" src={VIDEO}></iframe>
+        {mostrarVideo ? (
+          <iframe className="iframeVideo" scrolling="no" src={VIDEO}></iframe>
+        ) : (
+          <>
+            <img className="o_img_video" src={imgVideo} alt="imgJuego" />
+            <button
+              className="o_btnVideo"
+              onClick={() => setMostrarVideo(!mostrarVideo)}
+            >
+              INICIAR VIDEO
+            </button>
+          </>
+        )}
       </div>
       <Subtitulos
         id="3"
@@ -52,17 +59,18 @@ import Informe from "./components/Informe/Informe.js";
         descrip="Video juego interactivo desarrollado con base a la informacion recolactada por “La comision de la verdad”.
       Este juego evalua la capacidad de comprensión y evalua que tan preparado estas para transmitir tus conocimientos a otras personas."
       ></Subtitulos>
-      
-      
-      
 
-      {mostrar ? <iframe className="iframeJuego" scrolling="no" src={JUEGO}></iframe>: 
-      
-      
-      <><img className="o_img_juego" src={imgJuego} alt="imgJuego"  /> 
-      <button  className="o_btnJuego" onClick={() => setMostrar(!mostrar)  } >INICIAR JUEGO</button></>}
+      {mostrar ? (
+        <iframe className="iframeJuego" scrolling="no" src={JUEGO}></iframe>
+      ) : (
+        <>
+          <img className="o_img_juego" src={imgJuego} alt="imgJuego" />
+          <button className="o_btnJuego" onClick={() => setMostrar(!mostrar)}>
+            INICIAR JUEGO
+          </button>
+        </>
+      )}
 
-      
       <Informe />
 
       <Footer></Footer>
