@@ -4,22 +4,27 @@ import Titulos from "./components/Titulos/Titulos.js";
 import Landing from "./imgs/Landing.jpg";
 import "./App.css";
 import Subtitulos from "./components/Subtitulos/Subtitulos.js";
-/*import video from "./imgs/video.mp4"*/
-/*import juego from "./imgs/juego.png";
-import VideoInteractivo from "./components/VideoInteractivo/VideoInteractivo.js";*/
+import imgJuego from "./imgs/imagen_juego.png"
+import imgVideo from "./imgs/imagen_video.png";
+import { useState } from "react";
+
 import Informe from "./components/Informe/Informe.js";
-/*import video from "https://www.youtube.com/watch?v=ZQhYeztNMcg"*/
+
+  function App() {
 
 
-function App() {
-  function redirect() {
-    window.location.href = "http://localhost:3001/";
-  }
-let VIDEO = 'http://127.0.0.1:5500/index.html'
+
+    
+    let [mostrar, setMostrar] = useState(false);
+
+
+
+  let VIDEO = "http://127.0.0.1:5500/index.html";
+  let JUEGO = "http://localhost:3001/";
   return (
     <div className="App">
-      <NavBar ></NavBar>
-      <div className="o_container">
+      <NavBar></NavBar>
+      <div id="1" className="o_container">
         <img className="o_imgLanding" src={Landing} alt="Landing" />
         <Titulos className="except" texto="¿Quienes somos?"></Titulos>
         <p className="o_parrafo">
@@ -33,35 +38,32 @@ let VIDEO = 'http://127.0.0.1:5500/index.html'
         </p>
       </div>
       <Subtitulos
-        id='2'
+        id="2"
         textSubtitle="Video interactivo"
         descrip="Bienvenido al espacio del video interactivo, en el cual haras parte de un recorrido informativo sobre la Comision de la Verdad y las diferentes iniciativas que tiene. "
       ></Subtitulos>
-      {/*<video className="videitotry" controls loop>
-        <source src={video} type="video/mp4" />
-      </video>
-      {/*<img className="videitotry" src={video} alt="video"/>
-      
-       <VideoInteractivo>  </VideoInteractivo>
-*/}
 
-<div className="containerIframe">
-      <iframe
-        className="iframeVideo"
-        scrolling="no"
-        src={VIDEO}
-      ></iframe>
-</div>
-      <Subtitulos 
-        id='3'
+      <div className="containerIframe">
+        <iframe className="iframeVideo" scrolling="no" src={VIDEO}></iframe>
+      </div>
+      <Subtitulos
+        id="3"
         textSubtitle="Juega y aprende"
         descrip="Video juego interactivo desarrollado con base a la informacion recolactada por “La comision de la verdad”.
       Este juego evalua la capacidad de comprensión y evalua que tan preparado estas para transmitir tus conocimientos a otras personas."
       ></Subtitulos>
+      
+      
+      
 
-      <button onClick={() => redirect()}>click para ir al juego</button>
+      {mostrar ? <iframe className="iframeJuego" scrolling="no" src={JUEGO}></iframe>: 
+      
+      
+      <><img className="o_img_juego" src={imgJuego} alt="imgJuego"  /> 
+      <button  className="o_btnJuego" onClick={() => setMostrar(!mostrar)  } >INICIAR JUEGO</button></>}
 
-      <Informe  />
+      
+      <Informe />
 
       <Footer></Footer>
     </div>
