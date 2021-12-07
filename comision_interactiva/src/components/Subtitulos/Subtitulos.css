@@ -19,8 +19,9 @@
 .o_descripcion{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    font-size: 1vw;
     color: #222831;
-    font-size: 100%;
+
     text-align: justify;
     margin-right: 2rem;
     

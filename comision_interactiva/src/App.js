@@ -14,7 +14,7 @@ function App() {
   let [mostrar, setMostrar] = useState(false);
   let [mostrarVideo, setMostrarVideo] = useState(false);
 
-  let VIDEO = "http://127.0.0.1:5500/index.html";
+  let VIDEO = "https://videocomiuao.web.app/";
   let JUEGO = "https://videojuegocomiuao.web.app/";
   return (
     <div className="App">
