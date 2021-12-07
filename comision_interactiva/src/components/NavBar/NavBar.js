@@ -29,7 +29,7 @@ function NavBar() {
                     <div className="o_nav_inferior">
                         <Link className="o_title_nav" to='1' smooth='true' duration='1000' >¿Quienes somos?</Link>
                         <Link className="o_title_nav"to='2' smooth='true' duration='1000'offset={-100}>Video interactivo</Link>
-                        <Link className="o_title_nav" to='3' smooth='true' duration='1000'>Juega y aprende</Link>
+                        <Link className="o_title_nav" to='3' smooth='true' duration='1000' offset={-100}>Juega y aprende</Link>
                         <Link className="o_title_nav" to='4' smooth='true' duration='1000'>Informe</Link>
                     </div>
                 </div>

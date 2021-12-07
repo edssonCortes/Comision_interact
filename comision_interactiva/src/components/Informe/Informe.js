@@ -76,6 +76,8 @@ const Informe = () => {
             
             
         ></Subtitulos>
+        <button className="o_btnDescarga">DESCARGAR INFORME </button>
+
       </div>
       <div className="o_div_der">
         <Carousel

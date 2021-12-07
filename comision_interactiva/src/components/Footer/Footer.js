@@ -12,7 +12,7 @@ function Footer() {
 
 
             <div className="space2">
-                <div className="space3">hola</div>
+                <div className="space3"></div>
                 <div className="o_contact">
                     <div className="o_pCont">
                         <p className="o_contact_text">Contactanos</p>
@@ -27,7 +27,7 @@ function Footer() {
 
             </div>
             <div className="o_footText">
-                <h3 className="o_h3Foot">© 2021 Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No Repetición </h3>
+                <h3 className="o_h3Foot">&copy; 2021 Universidad Autónoma de Occidente </h3>
             </div>
 
 
