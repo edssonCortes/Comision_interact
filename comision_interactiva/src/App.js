@@ -7,8 +7,8 @@ import Subtitulos from "./components/Subtitulos/Subtitulos.js";
 import imgJuego from "./imgs/imagen_juego.png";
 import imgVideo from "./imgs/imagen_video.png";
 import { useState } from "react";
-
 import Informe from "./components/Informe/Informe.js";
+import { Carousel } from "react-carousel-minimal";
 
 function App() {
   let [mostrar, setMostrar] = useState(false);
@@ -16,12 +16,43 @@ function App() {
 
   let VIDEO = "https://videocomiuao.web.app/";
   let JUEGO = "https://videojuegocomiuao.web.app/";
+
+  const imagenes = [
+    {
+      image:
+        "https://comisiondelaverdad.co/media/zoo/images/Arauca_contexto01_c00d6e0e9cecd85ac4eebdb4db4ad53f.jpg",
+      caption: "",
+    },
+    {
+      image:
+        "https://comisiondelaverdad.co/media/zoo/images/Arauca_contexto02_e768885ec0b9aee2f30dfe325ebac805.jpg",
+      caption: "",
+    },
+   
+  ];
   return (
     <div className="App">
       <NavBar></NavBar>
       <div id="1" className="o_container">
-        <img className="o_imgLanding" src={Landing} alt="" />
-        <Titulos className="except" texto="¿Quienes somos?"></Titulos>
+        <Carousel   
+        data={imagenes}
+        time={10000}
+        width="100%"
+        height="35vw"
+        radius=""
+        slideNumber={true}
+        captionPosition="bottom"
+        automatic={true}
+        dots={true}
+        pauseIconColor="white"
+        pauseIconSize="40px"
+        slideBackgroundColor="darkgrey"
+        slideImageFit="cover"
+        thumbnails={false}
+        thumbnailWidth="100px" ></Carousel>
+
+
+        <Titulos  texto="¿Quienes somos?"></Titulos>
         <p className="o_parrafo">
           Somos una Entidad de Estado que busca el esclarecimiento de los
           patrones y causas explicativas del conflicto armado interno que
@@ -40,7 +71,7 @@ function App() {
 
       <div className="containerIframe">
         {mostrarVideo ? (
-          <iframe className="iframeVideo" scrolling="no" src={VIDEO}></iframe>
+          <iframe title="iframeVideo"className="iframeVideo" scrolling="no" src={VIDEO}></iframe>
         ) : (
           <>
             <img className="o_img_video" src={imgVideo} alt="imgJuego" />
@@ -61,7 +92,7 @@ function App() {
       ></Subtitulos>
 
       {mostrar ? (
-        <iframe className="iframeJuego" scrolling="no" src={JUEGO}></iframe>
+        <iframe title="iframeJuego"className="iframeJuego" scrolling="no" src={JUEGO}></iframe>
       ) : (
         <>
           <img className="o_img_juego" src={imgJuego} alt="imgJuego" />

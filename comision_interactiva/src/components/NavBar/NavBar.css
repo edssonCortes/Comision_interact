@@ -1,4 +1,5 @@
 /*Estilos de la barra de navegacion*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 
 .o_navBar{
     display: flex;
@@ -51,6 +52,7 @@
     cursor: pointer;
 
 }
+
 .img:hover{
     margin: 0px 0px 0px 10px;
     
@@ -100,7 +102,6 @@
     margin-right: 10px;
     color: #DDDDDD ;
     margin: 0;
+    font-size: 0.8vw;
 }
 
-/*
-*/
