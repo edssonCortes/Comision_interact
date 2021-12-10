@@ -1,8 +1,6 @@
 import NavBar from "./components/NavBar/NavBar.js";
 import Footer from "./components/Footer/Footer.js";
 import Titulos from "./components/Titulos/Titulos.js";
-import Landing from "./imgs/Landing.jpg";
-
 import "./App.css";
 import Subtitulos from "./components/Subtitulos/Subtitulos.js";
 import imgJuego from "./imgs/imagen_juego.png";
@@ -16,7 +14,7 @@ function App() {
   let [mostrarVideo, setMostrarVideo] = useState(false);
 
   let VIDEO = "https://videocomiuao.web.app/";
-  let JUEGO = "https://videojuegocomiuao.web.app/";
+  let JUEGO = "https://videouaocomi.web.app/{";
 
   const imagenes = [
     {
