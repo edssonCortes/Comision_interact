@@ -6,6 +6,7 @@ import facebook from '../../imgs/facebook.png'
 import youtube from '../../imgs/youtube.png'
 import instagram from '../../imgs/instagram.png'
 import tiktok from '../../imgs/tiktok.png'
+import logoInteract from "../../imgs/logoInteract.png";
 import {Link} from 'react-scroll'
 
 function NavBar() {
@@ -35,7 +36,7 @@ function NavBar() {
 
             <nav className="o_navBar">
                 <div className="o_imgCont">
-                    <img className="imgNav" src={LogoNav} alt='logoNav' />
+                    <img className="imgNav" src={logoInteract} alt='logoNav' />
                 </div>
                 <div className="o_nav_interno">
                     <div className="o_nav_superior">

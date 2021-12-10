@@ -35,9 +35,12 @@
   position: absolute;
   bottom: 5%;
   left: 10%;
-  color: #DDDDDD;
+  color: #ffffff;
+ 
+  
   text-align: justify;
-  margin-right: 12rem;
+  margin-right: 10vw;
+  
 }
 
 .App-logo {

@@ -7,8 +7,9 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     margin-top: 30px;
-    color: #DDDDDD;
+    color: #ffffff;
     font-size: 200%;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.87);
 }
 
 

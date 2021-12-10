@@ -2,9 +2,12 @@ import React from "react";
 import "./Informe.css";
 import Subtitulos from "../Subtitulos/Subtitulos";
 
+
 import { Carousel as Cr } from "react-carousel-minimal";
 
 const Informe = () => {
+
+  
   const datos = [
     {
       image:
@@ -12,22 +15,7 @@ const Informe = () => {
       caption: "",
     },
    
-    
-    {
-      image:
-        "https://comisiondelaverdad.co/media/zoo/images/Arauca_contexto05_5f83a1014fbe3dcf3cacccb96e06a456.jpg",
-      caption: "",
-    },
-    {
-      image:
-        "https://comisiondelaverdad.co/media/zoo/images/afrocol03_68c8011842be86ef88e1c6376fa44e8d.jpg",
-      caption: "",
-    },
-    {
-      image:
-        "https://comisiondelaverdad.co/media/zoo/images/desaparecidosMagdalena03_d2d5429f0904eca1b0bd980d02fe7f7e.jpg",
-      caption: "",
-    },
+   
     
   ];
 
@@ -51,7 +39,7 @@ const Informe = () => {
           galley of type and scrambled it to make a type specimen book. 
           It has survived not only five centuries"
         ></Subtitulos>
-        <button className="o_btnDescarga">DESCARGAR INFORME </button>
+        <button className="o_btnDescarga">RECURSOS </button>
       </div>
       <div className="o_div_der">
       <Cr
@@ -60,10 +48,10 @@ const Informe = () => {
           width="850px"
           height="500px"
           radius="16px"
-          slideNumber={true}
+          slideNumber={false}
           captionPosition="bottom"
           automatic={false}
-          dots={true}
+          dots={false}
           pauseIconColor="white"
           pauseIconSize="40px"
           slideBackgroundColor="darkgrey"

@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar/NavBar.js";
 import Footer from "./components/Footer/Footer.js";
 import Titulos from "./components/Titulos/Titulos.js";
 import Landing from "./imgs/Landing.jpg";
+
 import "./App.css";
 import Subtitulos from "./components/Subtitulos/Subtitulos.js";
 import imgJuego from "./imgs/imagen_juego.png";
@@ -23,9 +24,21 @@ function App() {
         "https://comisiondelaverdad.co/media/zoo/images/Arauca_contexto01_c00d6e0e9cecd85ac4eebdb4db4ad53f.jpg",
       caption: "",
     },
+   
+    
     {
       image:
-        "https://comisiondelaverdad.co/media/zoo/images/Arauca_contexto02_e768885ec0b9aee2f30dfe325ebac805.jpg",
+        "https://comisiondelaverdad.co/media/zoo/images/Arauca_contexto05_5f83a1014fbe3dcf3cacccb96e06a456.jpg",
+      caption: "",
+    },
+    {
+      image:
+        "https://comisiondelaverdad.co/media/zoo/images/afrocol03_68c8011842be86ef88e1c6376fa44e8d.jpg",
+      caption: "",
+    },
+    {
+      image:
+        "https://comisiondelaverdad.co/media/zoo/images/desaparecidosMagdalena03_d2d5429f0904eca1b0bd980d02fe7f7e.jpg",
       caption: "",
     },
    
