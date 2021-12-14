@@ -10,20 +10,24 @@ import tiktok from "../../imgs/tiktok.png";
 
 function Footer() {
   function instagramRedirect() {
-    window.location.href = "  https://www.instagram.com/comisionverdadc/";
+    window.open(' https://www.instagram.com/comisionverdadc/', '_blank');
   }
   function tiktokRedirect() {
-    window.location.href = "https://www.tiktok.com/@comisionverdadc?";
+    
+    window.open(' https://www.tiktok.com/@comisionverdadc?', '_blank');
   }
   function faceRedirect() {
-    window.location.href = "https://www.facebook.com/ComisionVerdadC";
+    window.open(' https://www.facebook.com/ComisionVerdadC', '_blank');
+    
   }
 
   function ytRedirect() {
-    window.location.href = "https://www.youtube.com/c/Comisi%C3%B3ndelaVerdad";
+    
+    window.open(' https://www.youtube.com/c/Comisi%C3%B3ndelaVerdad', '_blank');
   }
   function twittRedirect() {
-    window.location.href = "https://twitter.com/ComisionVerdadC";
+    
+    window.open(' https://twitter.com/ComisionVerdadC', '_blank');
   }
 
   return (

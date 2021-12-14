@@ -14,7 +14,7 @@ function App() {
   let [mostrarVideo, setMostrarVideo] = useState(false);
 
   let VIDEO = "https://videocomiuao.web.app/";
-  let JUEGO = "https://videouaocomi.web.app/{";
+  let JUEGO = "https://videouaocomi.web.app/";
 
   const imagenes = [
     {
