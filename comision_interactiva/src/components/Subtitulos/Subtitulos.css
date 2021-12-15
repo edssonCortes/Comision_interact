@@ -35,7 +35,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 6%;
+    margin-left: 1%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -47,6 +47,19 @@
     .o_subtitulos{
    
         font-size: 1.9vw;
+
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+  
+    .o_descripcion{
+        font-size: 2vw;
+    }
+
+    .o_subtitulos{
+   
+        font-size: 2.6vw;
 
     }
 }

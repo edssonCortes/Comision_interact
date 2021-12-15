@@ -12,58 +12,66 @@ import { Carousel } from "react-carousel-minimal";
 function App() {
   let [mostrar, setMostrar] = useState(false);
   let [mostrarVideo, setMostrarVideo] = useState(false);
-
-  let VIDEO = "https://videocomiuao.web.app/";
-  let JUEGO = "https://videouaocomi.web.app/";
+  let VIDEO = "https://videocomiuao.web.app";
+  let JUEGO = "https://videojuegocomiuao.web.app";
 
   const imagenes = [
     {
       image:
-        "https://comisiondelaverdad.co/media/zoo/images/Arauca_contexto01_c00d6e0e9cecd85ac4eebdb4db4ad53f.jpg",
-      caption: "",
-    },
-   
-    
-    {
-      image:
-        "https://comisiondelaverdad.co/media/zoo/images/Arauca_contexto05_5f83a1014fbe3dcf3cacccb96e06a456.jpg",
+        "https://comisiondelaverdad.co/media/zoo/images/comunidad_uwa13_657b6a1c17b0d0b8388a146fd0ba27f4.jpg",
       caption: "",
     },
     {
       image:
-        "https://comisiondelaverdad.co/media/zoo/images/afrocol03_68c8011842be86ef88e1c6376fa44e8d.jpg",
+        "https://comisiondelaverdad.co/media/zoo/images/comunidad_uwa06_e42fa4db143f80c4020bca2a4bb05ad7.jpg",
       caption: "",
     },
     {
       image:
-        "https://comisiondelaverdad.co/media/zoo/images/desaparecidosMagdalena03_d2d5429f0904eca1b0bd980d02fe7f7e.jpg",
+        "https://comisiondelaverdad.co/media/zoo/images/comunidad_uwa03_d84d3e3cf21ab09ba07c34408933b7a6.jpg",
       caption: "",
     },
+    {
+      image:
+        "https://comisiondelaverdad.co/media/zoo/images/amazonas06f_c852fbeb6ff8724059a0762890ca2203.jpg",
+      caption: "",
+    },
+    {
+      image:
+        "https://comisiondelaverdad.co/media/zoo/images/quibdofoto08_0962b8c58dd4b9e2e388185b70b004be.jpg",
+      caption: "",
+    },
+    {
+      image:
+        "https://comisiondelaverdad.co/media/zoo/images/aguanegra02_7410403642a15b54e072ea973d7442b7.jpg",
+      caption: "",
+    },
+
    
   ];
   return (
     <div className="App">
       <NavBar></NavBar>
       <div id="1" className="o_container">
-        <Carousel   
-        data={imagenes}
-        time={10000}
-        width="100%"
-        height="35vw"
-        radius=""
-        slideNumber={true}
-        captionPosition="bottom"
-        automatic={true}
-        dots={true}
-        pauseIconColor="white"
-        pauseIconSize="40px"
-        slideBackgroundColor="darkgrey"
-        slideImageFit="cover"
-        thumbnails={false}
-        thumbnailWidth="100px" ></Carousel>
+        <Carousel
+          data={imagenes}
+          time={10000}
+          width="100%"
+          height="35vw"
+          radius=""
+          slideNumber={true}
+          captionPosition="bottom"
+          automatic={true}
+          dots={true}
+          pauseIconColor="white"
+          pauseIconSize="40px"
+          slideBackgroundColor="darkgrey"
+          slideImageFit="cover"
+          thumbnails={false}
+          thumbnailWidth="100px"
+        ></Carousel>
 
-
-        <Titulos  texto="¿Quienes somos?"></Titulos>
+        <Titulos texto="¿Quienes somos?"></Titulos>
         <p className="o_parrafo">
           Somos una Entidad de Estado que busca el esclarecimiento de los
           patrones y causas explicativas del conflicto armado interno que
@@ -82,7 +90,12 @@ function App() {
 
       <div className="containerIframe">
         {mostrarVideo ? (
-          <iframe title="iframeVideo"className="iframeVideo" scrolling="no" src={VIDEO}></iframe>
+          <iframe
+            title="iframeVideo"
+            className="iframeVideo"
+            scrolling="no"
+            src={VIDEO}
+          ></iframe>
         ) : (
           <>
             <img className="o_img_video" src={imgVideo} alt="imgJuego" />
@@ -103,7 +116,12 @@ function App() {
       ></Subtitulos>
 
       {mostrar ? (
-        <iframe title="iframeJuego"className="iframeJuego" scrolling="no" src={JUEGO}></iframe>
+        <iframe
+          title="iframeJuego"
+          className="iframeJuego"
+          scrolling="no"
+          src={JUEGO}
+        ></iframe>
       ) : (
         <>
           <img className="o_img_juego" src={imgJuego} alt="imgJuego" />

@@ -75,7 +75,7 @@ function Footer() {
       </div>
       <div className="o_footText">
         <h3 className="o_h3Foot">
-          &copy; 2021 Universidad Autónoma de Occidente{""}
+          &copy; 2021 Universidad Autónoma de Occidente
         </h3>
       </div>
     </div>

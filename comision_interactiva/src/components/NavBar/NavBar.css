@@ -49,7 +49,7 @@
 
 .img{
     margin: 0px 0px 0px 10px;
-    width: 2%;
+    width: 1.1vw;
     height: auto;
     cursor: pointer;
 
@@ -107,4 +107,32 @@
     margin: 0;
     font-size: 0.8vw;
 }
+
+@media only screen and (max-width: 425px) {
+    
+    .img{
+        margin: 0px 0px 0px 10px;
+        width:3vw;
+        height: auto;
+        cursor: pointer;
+    
+    }
+    .contact{
+        
+        font-size: 2vw;
+    }
+    .imgNav{
+        width: 15vw;
+        margin-left: 7vw;
+        margin-top: 1vw;
+      
+    }
+    .o_title_nav{
+      
+        font-size: 2.5vw;
+        margin: 10px 0rem 0px 5vw;
+       
+    }
+
+  }
 

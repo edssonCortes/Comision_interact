@@ -53,7 +53,19 @@
 }
 
 .o_h3Foot {
-  font-size: medium;
+  font-size: 1vw;
   margin: 0;
   color: #dddddd;
+}
+
+
+@media only screen and (max-width: 425px) {
+  .o_h3Foot {
+    font-size: 2vw;
+   
+  }
+  .o_contact_text {
+    font-size: 2vw;
+   
+  }
 }
