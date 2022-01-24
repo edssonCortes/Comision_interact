@@ -29,7 +29,7 @@ const Informe = () => {
       <div className="o_div_izq">
         <Subtitulos
           textSubtitle="Infórmese"
-          descrip="Aqui podra encontrar información de los avances de la comisión"
+          descrip="Aqui podra encontrar información de los avances de la comisión."
           descrip2="La comisión de la verdad ha llegado a su fin y con ello ha dejado un gran legado que se compone de
           reparación de víctimas, trabajo social con las comunidades, un sin fin de videos e información para los colombianos
           además de un informe detallado para que se esclarezca la verdad y todos podamos conocer cómo se llegó a la guerra

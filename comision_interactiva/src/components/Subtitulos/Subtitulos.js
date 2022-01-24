@@ -8,6 +8,7 @@ function Subtitulos(props) {
     let descrip = props.descrip;
     let descrip2 = props.descrip2;
     let id = props.id;
+    
     return (
         <div className="o_subContainer" id={id}>
             <div className="o_line"></div>

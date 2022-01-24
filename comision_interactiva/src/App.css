@@ -90,7 +90,7 @@
   border-radius: 1rem;
 }
 .o_btnVideo:hover{
-  opacity: 90%;
+  opacity: 0.9;
   background-color: gray;
   box-shadow: 0px 7px 22px -9px rgba(0,0,0,0.63);
   }
@@ -116,7 +116,7 @@
 }
 
 .o_btnJuego:hover{
-opacity: 90%;
+  opacity: 0.9;
 background-color: gray;
 box-shadow: 0px 7px 22px -9px rgba(0,0,0,0.63);
 }
