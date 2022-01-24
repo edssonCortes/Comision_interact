@@ -75,7 +75,14 @@ function Footer() {
       </div>
       <div className="o_footText">
         <h3 className="o_h3Foot">
-          &copy; 2021 Universidad Autónoma de Occidente
+         &copy; Página web desarrollada por Edsson Cortes y Jose Meza
+        
+
+        </h3>
+        <h3 className="o_h3Foot">
+         Todas las imagenes de esta pagina web son de propiedad de la Comision de la Verdad
+        
+
         </h3>
       </div>
     </div>

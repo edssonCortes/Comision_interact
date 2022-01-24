@@ -7,6 +7,11 @@ import { Carousel as Cr } from "react-carousel-minimal";
 
 const Informe = () => {
 
+
+  const handleRecursos = ()=>{
+    window.open('https://comisiondelaverdad.co/actualidad/publicaciones',"_blank")
+  }
+
   
   const datos = [
     {
@@ -23,12 +28,8 @@ const Informe = () => {
     <div className="o_contenedorTarjeta" id="4">
       <div className="o_div_izq">
         <Subtitulos
-          textSubtitle="Informe final de la verdad"
-          descrip="Dicho informe data de lo que ha sido el proceso de paz en colombia,
-             la reparacion, no repiticion y esclarecimiento de los hechos en el territorio 
-            colombiano que fueron generados por la violencia. 
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            "
+          textSubtitle="Infórmese"
+          descrip="Aqui podra encontrar información"
           descrip2="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
           when an unknown printer took a
           galley of type and scrambled it to make a type specimen book. 
@@ -39,7 +40,7 @@ const Informe = () => {
           galley of type and scrambled it to make a type specimen book. 
           It has survived not only five centuries"
         ></Subtitulos>
-        <button className="o_btnDescarga">RECURSOS </button>
+        <button className="o_btnDescarga" onClick={handleRecursos}>RECURSOS </button>
       </div>
       <div className="o_div_der">
       <Cr
