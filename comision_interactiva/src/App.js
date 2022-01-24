@@ -13,7 +13,7 @@ function App() {
   let [mostrar, setMostrar] = useState(false);
   let [mostrarVideo, setMostrarVideo] = useState(false);
   let VIDEO = "https://videocomiuao.web.app";
-  let JUEGO = "https://videojuegocomiuao.web.app";
+  let JUEGO = "https://videojuegocomiuao.web.app/";
 
   const imagenes = [
     {

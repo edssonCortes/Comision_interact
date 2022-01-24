@@ -29,16 +29,12 @@ const Informe = () => {
       <div className="o_div_izq">
         <Subtitulos
           textSubtitle="Infórmese"
-          descrip="Aqui podra encontrar información"
-          descrip2="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a
-          galley of type and scrambled it to make a type specimen book. 
-          It has survived not only five centuries 
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a 
-          galley of type and scrambled it to make a type specimen book. 
-          It has survived not only five centuries"
+          descrip="Aqui podra encontrar información de los avances de la comisión"
+          descrip2="La comisión de la verdad ha llegado a su fin y con ello ha dejado un gran legado que se compone de
+          reparación de víctimas, trabajo social con las comunidades, un sin fin de videos e información para los colombianos
+          además de un informe detallado para que se esclarezca la verdad y todos podamos conocer cómo se llegó a la guerra
+          y al perdón, además de conocer todas las consecuencias y resultados que dejo este hecho que ha marcado la historia de los 
+          Colombianos"
         ></Subtitulos>
         <button className="o_btnDescarga" onClick={handleRecursos}>RECURSOS </button>
       </div>
