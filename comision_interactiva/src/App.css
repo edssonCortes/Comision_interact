@@ -109,7 +109,7 @@
   background-color: #30475E;
   color: white;
   font-size: 1vw;
-  padding: 12px 24px;
+  padding: 1vw 2vw;
   border: none;
   cursor: pointer;
   border-radius: 1rem;
@@ -166,8 +166,14 @@ box-shadow: 0px 7px 22px -9px rgba(0,0,0,0.63);
   }
 
   .o_btnJuego{
-    top: 149vw;
+    top: 180vw;
     width: 14vw;
+  }
+
+  .o_btnVideo{
+    top: 105vw;
+    width: 14vw;
+
   }
 }
 @media only screen and (max-width: 425px) {
@@ -175,7 +181,7 @@ box-shadow: 0px 7px 22px -9px rgba(0,0,0,0.63);
   .o_btnVideo{
     width: 25vw;  
    
-    top: 95vw;
+    top: 102vw;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -187,16 +193,14 @@ box-shadow: 0px 7px 22px -9px rgba(0,0,0,0.63);
   }
 
   .o_btnJuego{
-    width: 25vw;  
-    
-    top: 169vw;
+    width: 25vw; 
+        
+    top: 180vw;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    
+    -ms-transform: translate(-50%, -50%);    
     font-size: 2vw;
-    padding: 2vw 2vw;
-    
+    padding: 2vw 2vw;    
     border-radius: 1vw;
   }
 }

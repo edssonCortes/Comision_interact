@@ -28,14 +28,14 @@
 
 .o_btnDescarga{
 
-    width: 15vw;  
+    width: 12vw;  
    background-color: #30475E;
   color: white;
   font-size: 0.8vw;
   padding: 1vw 2vw;
   border: none;
   cursor: pointer;
-  border-radius: 0.6vw;
+  border-radius: 1rem;
 }
 .o_btnDescarga:hover{
 
@@ -48,13 +48,13 @@ box-shadow: 0px 7px 22px -9px rgba(0,0,0,0.63);
 @media only screen and (max-width: 425px) {
     .o_btnDescarga{
 
-        width: 15vw;  
+        width: 25vw;  
         background-color: #30475E;
        color: white;
-       font-size: 1.5vw;
+       font-size: 2vw;
        padding: 2vw 4vw;
        border: none;
        cursor: pointer;
-       border-radius: 1.6vw;
+       border-radius: 1vw;
     }
   }

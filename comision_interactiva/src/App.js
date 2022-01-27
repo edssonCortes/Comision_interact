@@ -85,7 +85,7 @@ function App() {
       <Subtitulos
         id="2"
         textSubtitle="Video interactivo"
-        descrip="Bienvenido al espacio del video interactivo, en el cual haras parte de un recorrido informativo sobre la Comision de la Verdad y las diferentes iniciativas que tiene. "
+        descrip="Bienvenido al espacio del video interactivo, en el cual haras parte de un recorrido informativo sobre la Comision de la Verdad y las diferentes iniciativas que tiene. Durante el recorrido del video interactivo usted encontrará 3 temáticas diferentes, cada una de ellas le permite ir al canal de youtube al que hace referencia, el ciclo es infinito, puedes verlo cuantas veces quieras. "
       ></Subtitulos>
 
       <div className="containerIframe">
@@ -112,7 +112,8 @@ function App() {
         id="3"
         textSubtitle="Juega y aprende"
         descrip="Video juego interactivo desarrollado con base a la informacion recolactada por “La comision de la verdad”.
-      Este juego evalua la capacidad de comprensión y evalua que tan preparado estas para transmitir tus conocimientos a otras personas."
+        Este juego evalua la capacidad de comprensión y evalua que tan preparado estas para transmitir tus conocimientos a otras personas.
+        Teniendo en cuenta la información que nos ha proporcionado el video interactivo; responde las preguntas de este video juego, las cuales te ayudaran a saber que tan capacitado estás para ayudarnos a difundir el mensaje de la verdad."
       ></Subtitulos>
 
       {mostrar ? (

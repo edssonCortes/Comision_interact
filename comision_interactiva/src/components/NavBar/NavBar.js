@@ -73,7 +73,7 @@ function NavBar() {
           </div>
           <div className="o_nav_inferior">
             <Link className="o_title_nav" to="1" smooth="true" duration={1000}>
-              ¿Quienes somos?
+              ¿Quiénes somos?
             </Link>
             <Link
               className="o_title_nav"
@@ -94,7 +94,7 @@ function NavBar() {
               Juega y aprende
             </Link>
             <Link className="o_title_nav" to="4" smooth="true" duration={1000}>
-              Recursos
+              Infórmese
             </Link>
           </div>
         </div>
