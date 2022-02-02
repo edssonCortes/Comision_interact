@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: #DDDDDD;
+  
 }
 .iframe{
   overflow-y: hidden;
@@ -70,14 +71,14 @@
 
 }
 .o_img_video{
-  width:80%;
+  width:70%;
   position: relative;
 
 }
 .o_btnVideo{
   width: 12vw;  
   position: absolute;
-  top: 85vw;
+  top: 80vw;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -95,14 +96,14 @@
   box-shadow: 0px 7px 22px -9px rgba(0,0,0,0.63);
   }
 .o_img_juego{
-  width:80%;
+  width:70%;
   position: relative;
 
 }
 .o_btnJuego{
   width: 12vw;  
   position: absolute;
-  top: 145vw;
+  top: 140vw;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -166,12 +167,12 @@ box-shadow: 0px 7px 22px -9px rgba(0,0,0,0.63);
   }
 
   .o_btnJuego{
-    top: 180vw;
+    top: 172vw;
     width: 14vw;
   }
 
   .o_btnVideo{
-    top: 105vw;
+    top: 97vw;
     width: 14vw;
 
   }

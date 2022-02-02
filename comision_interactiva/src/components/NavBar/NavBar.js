@@ -80,7 +80,7 @@ function NavBar() {
               to="2"
               smooth="true"
               duration={1000}
-              offset={-100}
+              offset={-75}
             >
               Video interactivo
             </Link>
@@ -89,7 +89,7 @@ function NavBar() {
               to="3"
               smooth="true"
               duration={1000}
-              offset={-100}
+              offset={-75}
             >
               Juega y aprende
             </Link>
