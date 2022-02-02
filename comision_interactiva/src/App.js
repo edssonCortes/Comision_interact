@@ -8,12 +8,13 @@ import imgVideo from "./imgs/imagen_video.png";
 import { useState } from "react";
 import Informe from "./components/Informe/Informe.js";
 import { Carousel } from "react-carousel-minimal";
+import Trivia from "./components/Trivia/Trivia.jsx";
 
 function App() {
   let [mostrar, setMostrar] = useState(false);
   let [mostrarVideo, setMostrarVideo] = useState(false);
   let VIDEO = "https://videocomiuao.web.app";
-  let JUEGO = "https://videojuegocomiuao.web.app/";
+  /*let JUEGO = "https://videojuegocomiuao.web.app/";*/
 
   const imagenes = [
     {
@@ -117,12 +118,10 @@ function App() {
       ></Subtitulos>
 
       {mostrar ? (
-        <iframe
-          title="iframeJuego"
-          className="iframeJuego"
-          scrolling="no"
-          src={JUEGO}
-        ></iframe>
+        
+        <Trivia
+        setMostrar={setMostrar}
+        />
       ) : (
         <>
           <img className="o_img_juego" src={imgJuego} alt="imgJuego" />

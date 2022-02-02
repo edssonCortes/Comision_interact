@@ -18,7 +18,7 @@ const Informe = () => {
       image:
         "https://comisiondelaverdad.co/media/zoo/images/Arauca_contexto01_c00d6e0e9cecd85ac4eebdb4db4ad53f.jpg",
       caption: "",
-    },
+    }
    
    
     
@@ -51,7 +51,7 @@ const Informe = () => {
           dots={false}
           pauseIconColor="white"
           pauseIconSize="40px"
-          slideBackgroundColor="darkgrey"
+          slideBackgroundColor="white"
           slideImageFit="cover"
           thumbnails={false}
           thumbnailWidth="100px"
