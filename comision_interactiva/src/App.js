@@ -5,6 +5,7 @@ import "./App.css";
 import Subtitulos from "./components/Subtitulos/Subtitulos.js";
 import imgJuego from "./imgs/imagen_juego.png";
 import imgVideo from "./imgs/imagen_video.png";
+import imgClose from "./imgs/close.png";
 import { useState } from "react";
 import Informe from "./components/Informe/Informe.js";
 import { Carousel } from "react-carousel-minimal";
@@ -91,12 +92,14 @@ function App() {
 
       <div className="containerIframe">
         {mostrarVideo ? (
+          <> <img className="o-cerrar-video" src={imgClose} alt="imgJuego" onClick={() => setMostrarVideo(!mostrarVideo)} />
+          
           <iframe
             title="iframeVideo"
             className="iframeVideo"
             scrolling="no"
             src={VIDEO}
-          ></iframe>
+          ></iframe></>
         ) : (
           <>
             <img className="o_img_video" src={imgVideo} alt="imgJuego" />

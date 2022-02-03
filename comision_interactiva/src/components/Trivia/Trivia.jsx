@@ -66,7 +66,7 @@ function Trivia( {setMostrar}) {
             />
           )}
 
-          {score <= 1 && currentIndex >= questions.length ? (
+          {score <= 3 && currentIndex >= questions.length ? (
             <h2 className="score2">
               Te recomendamos documentarte mejor e intentarlo de nuevo.
             </h2>
@@ -74,7 +74,7 @@ function Trivia( {setMostrar}) {
             <h2 className="score"> </h2>
           )}
 
-          {score > 1 && score <= 2 && currentIndex >= questions.length ? (
+          {score > 3 && score <= 6 && currentIndex >= questions.length ? (
             <h2 className="score2">
               Ya casi estas listo para difundir el mensaje de la verdad, intentalo de nuevo.
             </h2>
@@ -82,7 +82,7 @@ function Trivia( {setMostrar}) {
             <h2 className="score"> </h2>
           )}
 
-          {score > 2 && score<= 3 && currentIndex >= questions.length ? (
+          {score > 6 && score<= 9 && currentIndex >= questions.length ? (
             <h2 className="score2">
               ¡Excelente!, estas listo para difundir el mensaje de la verdad.
             </h2>

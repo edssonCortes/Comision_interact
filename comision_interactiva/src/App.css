@@ -1,21 +1,18 @@
 .App {
   text-align: center;
-  background-color: #DDDDDD;
-  
+  background-color: #dddddd;
 }
-.iframe{
+.iframe {
   overflow-y: hidden;
   overflow-x: hidden;
   width: 85%;
   height: 720px;
-  
 }
 
 .o_container {
   position: relative;
   text-align: center;
   margin-bottom: 5vw;
-
 }
 
 .o_imgLanding {
@@ -24,14 +21,14 @@
   height: 35vw;
   object-fit: cover;
 }
-.videitotry{
+.videitotry {
   margin-top: 1rem;
   width: 85%;
 }
 
 .o_parrafo {
   text-shadow: 1px 1px 3px rgba(150, 150, 150, 0.86);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.2vw;
   position: absolute;
@@ -39,15 +36,13 @@
   left: 10%;
   color: white;
   text-align: justify;
-  margin-right: 10vw;  
+  margin-right: 10vw;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-
 
 .App-header {
   background-color: #282c34;
@@ -63,26 +58,39 @@
 .App-link {
   color: #61dafb;
 }
-.iframeVideo{
+.iframeVideo {
   border: none;
   width: 100%;
   height: 100%;
-  animation: clickit 1s
-
-}
-.o_img_video{
-  width:70%;
+  animation: clickit 1s;
   position: relative;
-
 }
-.o_btnVideo{
-  width: 12vw;  
+.o-cerrar-video {
+  width: 2vw;
+  position: absolute;
+  z-index: 1;
+  right: 9.5%;
+  overflow: hidden;
+  animation: clickit 1.5s;
+}
+
+.o-cerrar-video:hover {
+  width: 2.5vw;
+  right: 9.2%;
+}
+
+.o_img_video {
+  width: 70%;
+  position: relative;
+}
+.o_btnVideo {
+  width: 12vw;
   position: absolute;
   top: 80vw;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #30475E;
+  background-color: #30475e;
   color: white;
   font-size: 1vw;
   padding: 1vw 2vw;
@@ -90,24 +98,23 @@
   cursor: pointer;
   border-radius: 1rem;
 }
-.o_btnVideo:hover{
+.o_btnVideo:hover {
   opacity: 0.9;
   background-color: gray;
-  box-shadow: 0px 7px 22px -9px rgba(0,0,0,0.63);
-  }
-.o_img_juego{
-  width:70%;
-  position: relative;
-
+  box-shadow: 0px 7px 22px -9px rgba(0, 0, 0, 0.63);
 }
-.o_btnJuego{
-  width: 12vw;  
+.o_img_juego {
+  width: 70%;
+  position: relative;
+}
+.o_btnJuego {
+  width: 12vw;
   position: absolute;
   top: 140vw;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #30475E;
+  background-color: #30475e;
   color: white;
   font-size: 1vw;
   padding: 1vw 2vw;
@@ -116,45 +123,37 @@
   border-radius: 1rem;
 }
 
-.o_btnJuego:hover{
+.o_btnJuego:hover {
   opacity: 0.9;
-background-color: gray;
-box-shadow: 0px 7px 22px -9px rgba(0,0,0,0.63);
+  background-color: gray;
+  box-shadow: 0px 7px 22px -9px rgba(0, 0, 0, 0.63);
 }
 
-
-.iframeJuego{
+.iframeJuego {
   border: none;
   border-radius: 2rem;
   width: 82%;
   height: 35vw;
-  animation: clickit 1s
+  animation: clickit 1s;
 }
 
 @keyframes clickit {
-  0% {opacity: 0}
- 
-  100% {opacity: 1}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
-.containerIframe{
-  
+.containerIframe {
   width: 100%;
   height: 48vw;
   overflow: hidden;
-  
 }
 .space {
   width: 100%;
   height: 42.5rem;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 
@@ -163,46 +162,42 @@ box-shadow: 0px 7px 22px -9px rgba(0,0,0,0.63);
   .o_parrafo {
     font-size: 1.6vw;
     margin-right: 10vw;
-    
   }
 
-  .o_btnJuego{
+  .o_btnJuego {
     top: 172vw;
     width: 14vw;
   }
 
-  .o_btnVideo{
+  .o_btnVideo {
     top: 97vw;
     width: 14vw;
-
   }
 }
 @media only screen and (max-width: 425px) {
-  
-  .o_btnVideo{
-    width: 25vw;  
-   
+  .o_btnVideo {
+    width: 25vw;
+
     top: 102vw;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-   
+
     font-size: 2vw;
     padding: 2vw 2vw;
-    
+
     border-radius: 1vw;
   }
 
-  .o_btnJuego{
-    width: 25vw; 
-        
+  .o_btnJuego {
+    width: 25vw;
+
     top: 180vw;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);    
+    -ms-transform: translate(-50%, -50%);
     font-size: 2vw;
-    padding: 2vw 2vw;    
+    padding: 2vw 2vw;
     border-radius: 1vw;
   }
 }
-
