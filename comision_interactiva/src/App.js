@@ -73,7 +73,7 @@ function App() {
           thumbnailWidth="100px"
         ></Carousel>
 
-        <Titulos texto="¿Quienes somos?"></Titulos>
+        <Titulos texto="¿Quiénes somos?"></Titulos>
         <p className="o_parrafo">
           Somos una Entidad de Estado que busca el esclarecimiento de los
           patrones y causas explicativas del conflicto armado interno que
