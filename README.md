@@ -5,3 +5,5 @@ La pagina cuenta con un video interactivo, que describe que es la comision, cual
 Acicionalmente contiene un videojuego tipo trivia, en el cual las personas, sin importad su edad, pueden medir sus conocimientos acerca la situacion actual relacionada con el conflicto armado.
 
 Este es un proyecto realizado por Edsson Andree Cortes Vasquez y Jose Pablo Meza Campo.
+
+Este proyecto puede ser visualizado aqui: https://comi-interact.netlify.app/
